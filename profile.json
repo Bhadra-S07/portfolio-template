@@ -1,19 +1,24 @@
 {
-    "name": "Your Name",
-    "tagline": "Your one-line introduction",
-    "bio": "Write 2 or 3 sentences about yourself.",
+    "name": "Bhadra S",
+    "tagline": "Software & Creative Technology Enthusiast",
+    "bio": "A Computer Science student with a curiosity for how things work and a creative eye for how they could look and feel. Interested in exploring software, games, and design, I enjoy discovering new ideas and finding connections between technology and art. Always learning, always curious.",
     "skills": [
-        "Git",
-        "HTML"
+        "C",
+        "Java",
+        "Python",
+        "HTML",
+        "CSS",
+        "Git"
     ],
     "projects": [
         {
-            "title": "My first project",
-            "desc": "What it does.",
-            "link": "https://github.com/yourname"
+            "title": "Shadow Steps",
+            "desc": "A student game project exploring 2D gameplay, mechanics, and atmosphere using Java and libGDX.",
+            "link": "https://github.com/Bhadra-S07"
         }
     ],
     "links": {
-        "github": "https://github.com/yourname"
+        "github": "https://github.com/yourname",
+        "linkedin": "www.linkedin.com/in/bhadra-s07"
     }
 }
