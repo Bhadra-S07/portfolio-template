@@ -1,35 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
+  <title>Bhadra S — Software &amp; Creative Technology Enthusiast</title>
+  <meta name="description" content="Portfolio of Bhadra S, a Computer Science student interested in software, games, and where technology meets art.">
+  <meta name="theme-color" content="#f2ede3">
+
+  <!-- Fonts (the CSS has fallback fonts if these fail to load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=DM+Sans:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <header class="hero">
-    <h1 id="name"></h1>
-    <p id="tagline"></p>
-    <nav id="links"></nav>
-  </header>
-  <main>
-    <section>
-      <h2>About</h2>
-      <p id="bio"></p>
-    </section>
-    <section>
-      <h2>Skills</h2>
-      <ul id="skills" class="chips"></ul>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <div id="projects" class="grid"></div>
-    </section>
-  </main>
-  <footer id="footer"></footer>
-  <script src="script.js"></script>
-</body>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
 
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="monogram" href="#top" aria-label="Bhadra S — back to top"><span>B</span><span>S</span></a>
+
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#about"><span class="nav__no">01</span>About</a></li>
+          <li><a href="#skills"><span class="nav__no">02</span>Skills</a></li>
+          <li><a href="#projects"><span class="nav__no">03</span>Projects</a></li>
+          <li><a href="#contact"><span class="nav__no">04</span>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+
+        <div class="hero__meta label">
+          <p>Portfolio</p>
+          <p>Computer Science student</p>
+        </div>
+
+        <h1 class="hero__name" id="hero-title">
+          <span class="hero__first">Bhadra</span>
+          <span class="hero__initial">S</span>
+        </h1>
+
+        <p class="hero__tagline">Software &amp; Creative Technology Enthusiast</p>
+
+        <p class="hero__intro">
+          Curious about how software works, how games feel, and the place where technology and art meet.
+        </p>
+
+        <a class="cta" href="#projects">Explore the work <span class="cta__arrow" aria-hidden="true">↓</span></a>
+
+        <p class="note hero__note" aria-hidden="true">always learning <span class="note__arrow"></span></p>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <p class="label section__label"><b>01</b> About</p>
+
+        <div class="about__grid">
+          <h2 class="about__title" id="about-title">
+            How things work, <em>how they look&nbsp;&amp;&nbsp;feel.</em>
+          </h2>
+
+          <!-- Bio text is exactly as supplied -->
+          <p class="about__body">A Computer Science student with a curiosity for how things work and a creative eye for how they could look and feel. Interested in exploring software, games, and design, I enjoy discovering new ideas and finding connections between technology and art. <span class="mark">Always learning, always curious.</span></p>
+
+          <p class="note about__note" aria-hidden="true">technology ↔ art</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <p class="label section__label"><b>02</b> Skills</p>
+
+        <div class="section__head">
+          <h2 class="section__title" id="skills-title">The toolbox, <em>so&nbsp;far.</em></h2>
+          <p class="note" aria-hidden="true">always adding</p>
+        </div>
+
+        <!-- To change a skill, edit the text inside its <li>. -->
+        <ul class="skills" role="list">
+          <li class="skill"><span class="skill__no">01</span><span class="skill__name">C</span><span class="skill__kind label">Language</span></li>
+          <li class="skill"><span class="skill__no">02</span><span class="skill__name">Java</span><span class="skill__kind label">Language</span></li>
+          <li class="skill"><span class="skill__no">03</span><span class="skill__name">Python</span><span class="skill__kind label">Language</span></li>
+          <li class="skill"><span class="skill__no">04</span><span class="skill__name">HTML</span><span class="skill__kind label">Markup</span></li>
+          <li class="skill"><span class="skill__no">05</span><span class="skill__name">CSS</span><span class="skill__kind label">Styling</span></li>
+          <li class="skill"><span class="skill__no">06</span><span class="skill__name">Git</span><span class="skill__kind label">Version control</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <p class="label section__label"><b>03</b> Projects</p>
+
+        <div class="section__head">
+          <h2 class="section__title" id="projects-title">Things I’ve <em>been making.</em></h2>
+        </div>
+
+        <div class="projects">
+
+          <!-- ===== PROJECT TEMPLATE =====
+               To add another project: copy this whole <article> and paste it
+               below, then change the text and the link.
+               • No illustration? Delete the <figure> and remove
+                 "project--with-art" from the article's class.
+               • Want the layout mirrored? Add the class "project--flip". -->
+          <article class="project project--with-art">
+
+            <figure class="project__art">
+              <div class="frame">
+                <div class="scene" role="img" aria-label="Original illustration made with CSS: a small silhouette figure standing on stepped platforms in front of a large red disc. It is not a screenshot of the game.">
+                  <span class="scene__stars"></span>
+                  <span class="scene__disc"></span>
+                  <span class="scene__ground"></span>
+                  <span class="scene__plat scene__plat--a"></span>
+                  <span class="scene__plat scene__plat--b"></span>
+                  <span class="scene__plat scene__plat--c"></span>
+                  <span class="scene__hero"></span>
+                </div>
+              </div>
+              <figcaption>Fig. 1 — a little illustration, not a screenshot</figcaption>
+            </figure>
+
+            <div class="project__info">
+              <p class="label project__no">Project 01</p>
+              <h3 class="project__title"><span>Shadow</span> <em>Steps</em></h3>
+              <p class="project__desc">A student game project exploring 2D gameplay, mechanics, and atmosphere using Java and libGDX.</p>
+              <a class="cta" href="https://github.com/Bhadra-S07" target="_blank" rel="noopener noreferrer">Visit GitHub <span class="cta__arrow cta__arrow--out" aria-hidden="true">↗</span><span class="visually-hidden">(opens in a new tab)</span></a>
+            </div>
+
+          </article>
+          <!-- ===== END PROJECT TEMPLATE ===== -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="label section__label"><b>04</b> Contact</p>
+
+        <h2 class="contact__title" id="contact-title">Say <em>hello.</em></h2>
+        <p class="contact__intro">If you’re curious about software, games, or where technology meets art, you’re welcome to find me here.</p>
+
+        <ul class="contact__links" role="list">
+          <li>
+            <a class="big-link" href="https://github.com/Bhadra-S07" target="_blank" rel="noopener noreferrer">
+              <span class="big-link__name">GitHub</span>
+              <span class="big-link__handle">github.com/Bhadra-S07</span>
+              <span class="big-link__arrow" aria-hidden="true">↗</span>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a class="big-link" href="https://www.linkedin.com/in/bhadra-s07" target="_blank" rel="noopener noreferrer">
+              <span class="big-link__name">LinkedIn</span>
+              <span class="big-link__handle">linkedin.com/in/bhadra-s07</span>
+              <span class="big-link__arrow" aria-hidden="true">↗</span>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>Bhadra S</p>
+      <p class="fin" aria-hidden="true">fin.</p>
+      <p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
+    </div>
+    <p class="wrap site-footer__small">Made with plain HTML &amp; CSS.</p>
+  </footer>
+</body>
 </html>
